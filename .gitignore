@@ -22,3 +22,6 @@ generated-cra-app
 template
 .eslintcache
 Footer
+
+# generated files
+public/js
