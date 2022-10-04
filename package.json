@@ -4,5 +4,14 @@
   "main": "index.js",
   "repository": "git@github.com:marcusrodriguesdev/digital-wallet2.0.git",
   "author": "Marcus Rodrigues <marcusrodriguesdev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "husky": "^8.0.1",
+    "typescript": "^4.8.4"
+  }
 }
