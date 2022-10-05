@@ -7,7 +7,7 @@ const RedirectUser: React.FC = () => {
 
   useEffect(() => {
     if (location.pathname === '/') {
-      navigate('/user')
+      navigate('/auth')
     }
   }, [location, navigate])
 

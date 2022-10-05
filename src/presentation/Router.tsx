@@ -7,7 +7,7 @@ const Router: React.FC = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<RedirectUser />} />
-        <Route path="/user" element={<h1>User</h1>} />
+        <Route path="/auth" element={<h1>Authentication</h1>} />
       </Routes>
     </BrowserRouter>
   )
