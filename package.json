@@ -11,6 +11,7 @@
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test --passWithNoTests --no-cache --watchAll",
     "test:ci": "npm test -- --coverage",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install"
   },
   "devDependencies": {
