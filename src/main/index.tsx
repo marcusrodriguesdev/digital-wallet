@@ -1,4 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Router } from '@/presentation/Router'
 
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById('main'))
+ReactDOM.render(<Router />, document.getElementById('main'))
