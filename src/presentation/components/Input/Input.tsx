@@ -77,7 +77,7 @@ const Input: React.FC<InputProps> = (props: InputProps) => {
       )}
       {secureText && type === 'password' && (
         <Button scale={scale} data-testid="Input/ButtonEyeClose" type="button" onClick={onChangeType}>
-          <img className="eye-close" src={Assets.EyeClose} alt="Eye close" />
+          <img src={Assets.EyeClose} alt="Eye close" />
         </Button>
       )}
       {error && (

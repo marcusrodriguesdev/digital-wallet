@@ -100,9 +100,6 @@ export const Button = styled.button<ButtonProps>`
     background: transparent;
   }
 
-  .eye-close {
-  }
-
   &:hover {
     opacity: 0.8;
   }
