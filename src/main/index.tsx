@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from 'styled-components'
 import { Router } from '@/presentation/Router'
-import { GlobalStyle } from '@/presentation/theme/GlobalStyle'
+import { GlobalStyle } from '@/presentation/theme/GlobalStyle.styles'
 import { DarkTheme } from '@/presentation/theme/dark.theme'
 
 ReactDOM.render(
