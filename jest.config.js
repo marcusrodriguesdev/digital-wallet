@@ -4,6 +4,7 @@ module.exports = {
     '<rootDir>/src/**/*.{ts,tsx}',
     '**/*.d.ts',
     '!<rootDir>/src/**/index.{ts,tsx}',
+    '!<rootDir>/src/**/Router.{ts,tsx}',
     '!<rootDir>/src/**/*.stories.tsx',
     '!<rootDir>/src/**/*.styles.tsx',
     '!<rootDir>/src/**/tests/**/*'
