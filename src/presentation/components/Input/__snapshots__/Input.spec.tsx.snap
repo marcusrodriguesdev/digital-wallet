@@ -3,54 +3,20 @@
 exports[`presentation/components/Input should match snapshot 1`] = `
 {
   "asFragment": [Function],
-  "baseElement": .c0 {
-  margin-top: 20px;
-  position: relative;
-  margin-left: 20px;
-}
-
-.c1 {
-  border-radius: 2xl;
-  color: #7f5af0;
-  cursor: text;
-  left: 6px;
-  padding: 0.5px 5px;
-  position: absolute;
-  top: -9px;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
-  z-index: 1000;
-}
-
-.c2 {
-  background-color: #16161a;
-  border: #7f5af0 1px solid;
-  border-radius: 2px;
-  color: #fffffe;
-  height: 45px;
-  padding-left: 15px;
-  padding-bottom: 2px;
-  width: 270px;
-}
-
-.c2:focus {
-  outline: none;
-}
-
-<body>
+  "baseElement": <body>
     <div>
       <div
-        class="c0"
+        class="sc-bcXHqe jKuMwP"
       >
         <a
-          class="c1"
+          class="sc-gswNZR eRCfFc"
           data-testid="Input/Label"
           scale="medium"
         >
           Email
         </a>
         <input
-          class="c2"
+          class="sc-dkrFOg ctxQhK"
           data-testid="Input/StyledInput"
           name="email@email.com"
           scale="medium"
@@ -60,53 +26,19 @@ exports[`presentation/components/Input should match snapshot 1`] = `
       </div>
     </div>
   </body>,
-  "container": .c0 {
-  margin-top: 20px;
-  position: relative;
-  margin-left: 20px;
-}
-
-.c1 {
-  border-radius: 2xl;
-  color: #7f5af0;
-  cursor: text;
-  left: 6px;
-  padding: 0.5px 5px;
-  position: absolute;
-  top: -9px;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
-  z-index: 1000;
-}
-
-.c2 {
-  background-color: #16161a;
-  border: #7f5af0 1px solid;
-  border-radius: 2px;
-  color: #fffffe;
-  height: 45px;
-  padding-left: 15px;
-  padding-bottom: 2px;
-  width: 270px;
-}
-
-.c2:focus {
-  outline: none;
-}
-
-<div>
+  "container": <div>
     <div
-      class="c0"
+      class="sc-bcXHqe jKuMwP"
     >
       <a
-        class="c1"
+        class="sc-gswNZR eRCfFc"
         data-testid="Input/Label"
         scale="medium"
       >
         Email
       </a>
       <input
-        class="c2"
+        class="sc-dkrFOg ctxQhK"
         data-testid="Input/StyledInput"
         name="email@email.com"
         scale="medium"

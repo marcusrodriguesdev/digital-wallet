@@ -1,7 +1,6 @@
 import React from 'react'
 import { Input, InputProps } from './Input'
 import { fireEvent, render } from '@testing-library/react'
-import 'jest-styled-components'
 import * as Faker from 'faker'
 
 const makeSUT = (props?: Partial<InputProps>): any => {
