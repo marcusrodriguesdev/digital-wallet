@@ -5,12 +5,13 @@ import { ButtonWrapper, Container, InputWrapper, Title } from './LoginBox.styles
 
 export interface LoginBoxProps {
   emailValue: string
+  disabled: boolean
   onSubmit: () => void
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 const LoginBox: React.FC<LoginBoxProps> = (props: LoginBoxProps) => {
-  const { emailValue, onSubmit, onChange } = props
+  const { emailValue, disabled, onSubmit, onChange } = props
 
   return (
     <Container>
@@ -19,7 +20,7 @@ const LoginBox: React.FC<LoginBoxProps> = (props: LoginBoxProps) => {
         <Input label="E-mail" name="email" value={emailValue} type="text" scale="large" onChange={onChange} />
       </InputWrapper>
       <ButtonWrapper>
-        <Button label="Entrar" scale="large" variant="default" onClick={onSubmit} />
+        <Button label="Entrar" scale="large" variant="default" disabled={disabled} onClick={onSubmit} />
       </ButtonWrapper>
     </Container>
   )
