@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`presentation/components/Button should match snapshot 1`] = `
+<Button
+  disabled={false}
+  label="Entrar"
+  onClick={[MockFunction]}
+  scale="medium"
+  variant="default"
+/>
+`;
