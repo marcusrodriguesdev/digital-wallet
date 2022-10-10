@@ -67,7 +67,7 @@ export const StyledInput = styled.input<StyledInputProps>`
       : theme?.fonts?.bigInfo ?? {}};
   background-color: ${({ theme }) => theme?.colors?.background ?? '#16161a'};
   border: ${({ theme, error, isFocused }) =>
-      error ? theme?.colors?.error ?? '#ff6666' : isFocused ? theme?.colors?.highlight ?? '#7f5af0' : 'transparent'}
+      error ? theme?.colors?.error ?? '#ff6666' : theme?.colors?.highlight ?? '#7f5af0'}
     1px solid;
   border-radius: 2px;
   color: ${({ theme }) => theme?.colors?.main ?? '#fffffe'};
