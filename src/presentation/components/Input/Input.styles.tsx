@@ -2,9 +2,7 @@ import styled from 'styled-components'
 import { scaleTypes } from '../types/Input'
 
 export const Container = styled.div`
-  margin-top: 20px;
   position: relative;
-  margin-left: 20px;
 `
 
 interface LabelProps {
