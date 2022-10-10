@@ -16,7 +16,7 @@ export interface InputProps {
 }
 
 /**
- * Input component
+ * A stylized input for the application
  *
  * @param label           The label of the input
  * @param value           The value of the input
