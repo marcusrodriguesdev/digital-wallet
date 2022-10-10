@@ -27,7 +27,7 @@ export const Label = styled.a<LabelProps>`
       return theme?.fonts?.bigInfo ?? {}
     }
   }}
-  background: ${({ isFocused, theme }) => (isFocused ? theme?.colors?.cardBackground : 'transparent')};
+  background: ${({ isFocused, theme }) => (isFocused ? theme?.colors?.background : 'transparent')};
   border-radius: 2xl;
   color: ${({ theme, error, isFocused }) =>
     error
@@ -65,7 +65,7 @@ export const StyledInput = styled.input<StyledInputProps>`
       : sized === 'medium'
       ? theme?.fonts?.infoNarrow ?? {}
       : theme?.fonts?.bigInfo ?? {}};
-  background-color: ${({ theme }) => theme?.colors?.cardBackground ?? '#16161a'};
+  background-color: ${({ theme }) => theme?.colors?.background ?? '#16161a'};
   border: ${({ theme, error, isFocused }) =>
       error ? theme?.colors?.error ?? '#ff6666' : isFocused ? theme?.colors?.highlight ?? '#7f5af0' : 'transparent'}
     1px solid;
