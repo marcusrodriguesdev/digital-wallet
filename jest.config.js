@@ -10,11 +10,13 @@ module.exports = {
     '!<rootDir>/src/**/tests/**/*',
     '!<rootDir>/src/**/container/**/*'
   ],
+  moduleDirectories: ['node_modules', 'src'],
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',
   transform: {
     '.+\\.(ts|tsx)$': 'ts-jest',
-    '^.+\\.svg$': '<rootDir>/svgTransform.js'
+    '^.+\\.svg$': '<rootDir>/svgTransform.js',
+    '^.+\\.(js|jsx)$': 'babel-jest'
   },
   moduleNameMapper: {
     '@/(.*)': '<rootDir>/src/$1',
