@@ -6,10 +6,11 @@ import { fireEvent, render } from '@testing-library/react'
 
 const makeSUT = (props?: Partial<LoginBoxProps>): any => {
   const emailValue = props?.emailValue ?? Faker.random.words(2)
+  const disabled = props?.disabled ?? false
   const onSubmitSpy = jest.fn()
   const onChangeSpy = jest.fn()
 
-  const sut = <LoginBox emailValue={emailValue} onSubmit={onSubmitSpy} onChange={onChangeSpy} />
+  const sut = <LoginBox emailValue={emailValue} disabled={disabled} onSubmit={onSubmitSpy} onChange={onChangeSpy} />
 
   return { sut, emailValue, onSubmitSpy, onChangeSpy }
 }
@@ -37,5 +38,15 @@ describe('presentation/screens/Auth/LoginBox', () => {
     const input = getByTestId('Input/StyledInput')
     fireEvent.change(input, { target: { value: 'any_value' } })
     expect(onChangeSpy).toHaveBeenCalled()
+  })
+
+  it('should not call onSubmit if disabled is true', () => {
+    const { sut, onSubmitSpy } = makeSUT({
+      disabled: true
+    })
+    const { getByTestId } = render(sut)
+    const button = getByTestId('Button/Button')
+    button.click()
+    expect(onSubmitSpy).not.toHaveBeenCalled()
   })
 })

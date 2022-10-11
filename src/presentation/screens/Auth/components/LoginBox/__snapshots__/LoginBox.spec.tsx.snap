@@ -40,7 +40,7 @@ exports[`presentation/screens/Auth/LoginBox should match snapshot 1`] = `
           class="sc-kDvujY"
         >
           <button
-            class="sc-bcXHqe eNsOjl"
+            class="sc-bcXHqe iibZnN"
             data-testid="Button/Button"
             scale="large"
             type="button"
@@ -92,7 +92,7 @@ exports[`presentation/screens/Auth/LoginBox should match snapshot 1`] = `
         class="sc-kDvujY"
       >
         <button
-          class="sc-bcXHqe eNsOjl"
+          class="sc-bcXHqe iibZnN"
           data-testid="Button/Button"
           scale="large"
           type="button"
