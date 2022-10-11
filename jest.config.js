@@ -7,7 +7,8 @@ module.exports = {
     '!<rootDir>/src/**/Router.{ts,tsx}',
     '!<rootDir>/src/**/*.stories.tsx',
     '!<rootDir>/src/**/*.styles.tsx',
-    '!<rootDir>/src/**/tests/**/*'
+    '!<rootDir>/src/**/tests/**/*',
+    '!<rootDir>/src/**/container/**/*'
   ],
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',
