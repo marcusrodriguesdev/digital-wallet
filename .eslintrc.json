@@ -21,7 +21,7 @@
         "version": "detect"
       }
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["react", "prettier", "eslint-plugin-import-helpers"],
   "rules": {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "prettier/prettier": [
@@ -30,6 +30,20 @@
           "endOfLine": "auto"
         }
       ],
-    "@typescript-eslint/consistent-type-assertions": "off"
+    "@typescript-eslint/consistent-type-assertions": "off",
+    "import-helpers/order-imports": [
+      "error",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          "/^@/data/",
+          "/^@//",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
   }
 }
