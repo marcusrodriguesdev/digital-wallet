@@ -1,7 +1,9 @@
 import React from 'react'
-import { Input, InputProps } from './Input'
+
 import { fireEvent, render } from '@testing-library/react'
 import * as Faker from 'faker'
+
+import { Input, InputProps } from './Input'
 
 const makeSUT = (props?: Partial<InputProps>): any => {
   const value = props?.value ?? Faker.random.words(2)

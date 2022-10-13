@@ -1,6 +1,8 @@
-import { Assets } from '@/presentation/theme/Assets'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+
+import { Assets } from '@/presentation/theme/Assets'
+
 import { LoginBox } from '../components/LoginBox'
 import {
   Container,

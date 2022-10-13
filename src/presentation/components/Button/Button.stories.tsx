@@ -1,9 +1,12 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
+
 import { action } from '@storybook/addon-actions'
+import { storiesOf } from '@storybook/react'
 import '@react-theming/storybook-addon/register'
 import { ThemeProvider } from 'styled-components'
+
 import { DarkTheme } from '@/presentation/theme/dark.theme'
+
 import { Button } from './Button'
 
 storiesOf('presentation/components/Button', module)

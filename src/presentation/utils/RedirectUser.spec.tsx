@@ -1,9 +1,9 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { render } from '@testing-library/react'
 
 import { RedirectUser } from './RedirectUser'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 describe('presentation/utils/RedirectUser', () => {
   it('should match snapshot', () => {

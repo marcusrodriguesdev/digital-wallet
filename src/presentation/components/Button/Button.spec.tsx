@@ -1,8 +1,9 @@
 import React from 'react'
+
+import { fireEvent, render } from '@testing-library/react'
 import * as Faker from 'faker'
 
 import { Button, ButtonProps } from './Button'
-import { fireEvent, render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
 const makeSUT = (props?: Partial<ButtonProps>): any => {

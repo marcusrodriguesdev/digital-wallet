@@ -1,8 +1,9 @@
 import React from 'react'
-import { LoginBox, LoginBoxProps } from './LoginBox'
 
-import * as Faker from 'faker'
 import { fireEvent, render } from '@testing-library/react'
+import * as Faker from 'faker'
+
+import { LoginBox, LoginBoxProps } from './LoginBox'
 
 const makeSUT = (props?: Partial<LoginBoxProps>): any => {
   const emailValue = props?.emailValue ?? Faker.random.words(2)

@@ -1,6 +1,8 @@
 import React from 'react'
+
 import { Button } from '@/presentation/components/Button'
 import { Input } from '@/presentation/components/Input'
+
 import { ButtonWrapper, Container, InputWrapper, Title } from './LoginBox.styles'
 
 export interface LoginBoxProps {
