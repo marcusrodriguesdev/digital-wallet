@@ -1,8 +1,8 @@
 {
-  "name": "digital-wallet2.0",
+  "name": "digital-wallet",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:marcusrodriguesdev/digital-wallet2.0.git",
+  "repository": "git@github.com:marcusrodriguesdev/digital-wallet.git",
   "author": "Marcus Rodrigues <marcusrodriguesdev@gmail.com>",
   "license": "MIT",
   "scripts": {
