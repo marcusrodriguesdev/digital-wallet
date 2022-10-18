@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import { AuthScreenPresenter } from './screens/Auth/container'
+import { AuthScreenPresenter } from './pages/Auth/container'
 import { RedirectUser } from './utils/RedirectUser'
 
 const Router: React.FC = () => {
