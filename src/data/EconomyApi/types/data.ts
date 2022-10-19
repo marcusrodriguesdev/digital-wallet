@@ -1,5 +1,5 @@
-type dataType = [
-  {
+interface dataType {
+  [key: string]: {
     code: string
     codein: string
     name: string
@@ -11,16 +11,7 @@ type dataType = [
     ask: string
     timestamp: string
     create_date: string
-  },
-  {
-    ask: string
-    bid: string
-    high: string
-    low: string
-    pctChange: string
-    timestamp: string
-    varBid: string
   }
-]
+}
 
 export { dataType }

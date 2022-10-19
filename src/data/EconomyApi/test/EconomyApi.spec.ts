@@ -1,23 +1,27 @@
-import { AxiosInstance } from 'axios'
-import { mock } from 'jest-mock-extended'
+import axios from 'axios'
+import MockAdapter from 'axios-mock-adapter'
 
 import { getCurrency } from '../EconomyApi'
 import { data } from './mock'
 
 describe('EconomyApi', () => {
-  it('should return data', async () => {
-    const mockedAxios = mock<AxiosInstance>()
-    mockedAxios.get.mockResolvedValue({ data })
-    const result = await getCurrency('/USD-BRL/2?start_date=20221012&end_date=20221012')
+  it('should return the currency', async () => {
+    const mock = new MockAdapter(axios)
 
-    expect(result).toEqual(data)
+    mock.onGet('https://economia.awesomeapi.com.br/json/USD-BRL').reply(200, data)
+
+    const response = await getCurrency('USD-BRL')
+
+    expect(response).toEqual(data)
   })
 
-  it('should return error', async () => {
-    const mockedAxios = mock<AxiosInstance>()
-    mockedAxios.get.mockRejectedValue(new Error('error'))
-    const result = await getCurrency('error')
+  it('should return an error', async () => {
+    const mock = new MockAdapter(axios)
+    const error = 'Network Error'
+    mock.onGet('https://economia.awesomeapi.com.br/json/USD-BRL').networkError()
 
-    expect(result).toEqual('Request failed with status code 404')
+    const response = await getCurrency('USD-BRL')
+
+    expect(response).toEqual(new Error(error))
   })
 })
