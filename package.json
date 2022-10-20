@@ -6,7 +6,7 @@
   "author": "Marcus Rodrigues <marcusrodriguesdev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "vite --open",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc.json",
     "test": "jest --passWithNoTests --no-cache --runInBand --transformIgnorePatterns",
     "test:watch": "yarn test --passWithNoTests --no-cache --watchAll",
@@ -42,6 +42,7 @@
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.39.0",
+    "@vitejs/plugin-react": "^2.1.0",
     "axios-mock-adapter": "^1.21.2",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
@@ -71,6 +72,7 @@
     "ts-loader": "^9.4.1",
     "typescript": "*",
     "url-loader": "^4.1.1",
+    "vite": "^3.1.8",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
