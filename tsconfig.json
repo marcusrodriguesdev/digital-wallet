@@ -19,6 +19,6 @@
     "allowJs": true,
     "resolveJsonModule": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "tests"],
-  "exclude": ["tests/e2e/cypress"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "tests", "vite.config.ts"],
+  "exclude": ["tests/e2e/cypress"],
 }
