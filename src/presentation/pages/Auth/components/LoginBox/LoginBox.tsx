@@ -17,12 +17,12 @@ const LoginBox: React.FC<LoginBoxProps> = (props: LoginBoxProps) => {
 
   return (
     <Container>
-      <Title>Welcome</Title>
+      <Title>Login</Title>
       <InputWrapper>
         <Input label="E-mail" name="email" value={emailValue} type="text" scale="large" onChange={onChange} />
       </InputWrapper>
       <ButtonWrapper>
-        <Button label="Next" scale="large" variant="default" disabled={disabled} onClick={onSubmit} />
+        <Button label="Entrar" scale="large" variant="default" disabled={disabled} onClick={onSubmit} />
       </ButtonWrapper>
     </Container>
   )

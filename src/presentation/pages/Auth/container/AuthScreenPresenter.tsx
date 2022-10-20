@@ -79,7 +79,7 @@ const AuthScreenPresenter: React.FC = () => {
         />
       </ContainerLoginBox>
       {renderIcons && renderIconsComponent()}
-      <Credits>Developed with 💜 by Marcus Rodrigues</Credits>
+      <Credits>Desenvolvido com 💜 por Marcus Rodrigues</Credits>
     </Container>
   )
 }
