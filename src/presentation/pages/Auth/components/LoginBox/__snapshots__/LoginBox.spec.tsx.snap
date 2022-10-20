@@ -11,7 +11,7 @@ exports[`presentation/screens/Auth/LoginBox should match snapshot 1`] = `
         <h1
           class="sc-pyfCe csxPwX"
         >
-          Welcome
+          Login
         </h1>
         <div
           class="sc-jrcTuL khraKV"
@@ -49,7 +49,7 @@ exports[`presentation/screens/Auth/LoginBox should match snapshot 1`] = `
               class="sc-gswNZR eYthHy"
               scale="large"
             >
-              Next
+              Entrar
             </span>
           </button>
         </div>
@@ -63,7 +63,7 @@ exports[`presentation/screens/Auth/LoginBox should match snapshot 1`] = `
       <h1
         class="sc-pyfCe csxPwX"
       >
-        Welcome
+        Login
       </h1>
       <div
         class="sc-jrcTuL khraKV"
@@ -101,7 +101,7 @@ exports[`presentation/screens/Auth/LoginBox should match snapshot 1`] = `
             class="sc-gswNZR eYthHy"
             scale="large"
           >
-            Next
+            Entrar
           </span>
         </button>
       </div>
