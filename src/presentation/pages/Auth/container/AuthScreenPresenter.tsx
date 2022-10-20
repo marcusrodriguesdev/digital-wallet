@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { Assets } from '@/presentation/theme/Assets'
-
+import { AbsoluteIcons } from '../components/AbsoluteIcons'
 import { LoginBox } from '../components/LoginBox'
-import {
-  Container,
-  ContainerArrow,
-  ContainerCircle,
-  ContainerColumn,
-  ContainerLoginBox,
-  Credits
-} from './AuthScreenPresenter.styles'
+import { Container, ContainerLoginBox, Credits } from './AuthScreenPresenter.styles'
 
 const AuthScreenPresenter: React.FC = () => {
   const [emailValue, setEmailValue] = useState('')
@@ -24,20 +16,6 @@ const AuthScreenPresenter: React.FC = () => {
     localStorage.setItem('email', emailValue)
     navigate('/wallet')
   }
-
-  const renderIconsComponent = (): JSX.Element => (
-    <React.Fragment>
-      <ContainerColumn>
-        <img src={Assets.ColumnGroup} alt="columns group" />
-      </ContainerColumn>
-      <ContainerCircle>
-        <img src={Assets.CircleGroup} alt="circle" />
-      </ContainerCircle>
-      <ContainerArrow>
-        <img src={Assets.ArrowGroup} alt="arrow" />
-      </ContainerArrow>
-    </React.Fragment>
-  )
 
   useEffect(() => {
     const emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/g
@@ -78,7 +56,7 @@ const AuthScreenPresenter: React.FC = () => {
           onSubmit={() => handleSubmit()}
         />
       </ContainerLoginBox>
-      {renderIcons && renderIconsComponent()}
+      {renderIcons && <AbsoluteIcons />}
       <Credits>Desenvolvido com 💜 por Marcus Rodrigues</Credits>
     </Container>
   )
