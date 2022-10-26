@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
+import { RedirectUser } from './components/RedirectUser'
 import { AuthScreenPresenter } from './pages/Auth/container'
-import { RedirectUser } from './utils/RedirectUser'
 
 const Router: React.FC = () => {
   return (
