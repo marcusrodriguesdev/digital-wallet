@@ -63,7 +63,7 @@ export const DarkTheme: AppTheme = {
     },
     bigInfo: {
       fontFamily: 'Open Sans',
-      fontWeight: 600,
+      fontWeight: 700,
       fontSize: '16px',
       letterSpacing: '0.16px'
     },
