@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import { validateEmail } from '@/presentation/utils/string'
+
 import { AbsoluteIcons } from '../components/AbsoluteIcons'
 import { LoginBox } from '../components/LoginBox'
 import { Container, ContainerLoginBox, Credits } from './AuthScreenPresenter.styles'
@@ -18,10 +20,9 @@ const AuthScreenPresenter: React.FC = () => {
   }
 
   useEffect(() => {
-    const emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/g
-    const isValid = emailRegex.test(emailValue)
+    const emailIsValid = validateEmail(emailValue)
 
-    setValidEmail(isValid && emailValue.length > 0)
+    setValidEmail(emailIsValid && emailValue.length > 0)
   }, [emailValue, setValidEmail])
 
   useEffect(() => {
