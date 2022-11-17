@@ -6,7 +6,7 @@ exports[`presentation/components/Drawer should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-bcXHqe hHHAib"
+        class="sc-bcXHqe lmWuie"
       >
         <div
           class="sc-gswNZR"
@@ -102,7 +102,7 @@ exports[`presentation/components/Drawer should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-bcXHqe hHHAib"
+      class="sc-bcXHqe lmWuie"
     >
       <div
         class="sc-gswNZR"
@@ -255,7 +255,7 @@ exports[`presentation/components/Drawer should render other icons accordingly 1`
   "baseElement": <body>
     <div>
       <div
-        class="sc-bcXHqe hHHAib"
+        class="sc-bcXHqe lmWuie"
       >
         <div
           class="sc-gswNZR"
@@ -351,7 +351,7 @@ exports[`presentation/components/Drawer should render other icons accordingly 1`
   </body>,
   "container": <div>
     <div
-      class="sc-bcXHqe hHHAib"
+      class="sc-bcXHqe lmWuie"
     >
       <div
         class="sc-gswNZR"
