@@ -8,11 +8,13 @@ import { CircleName, Container, ContainerInfo, OpenInput, Label, MenuButton } fr
 export interface HeaderProps {
   renderInfo: boolean
   email: string
+  month: string
   expenseTotal: number
   incomeTotal: number
   onExpenseClick: () => void
   onIncomeClick: () => void
   onOpenDrawer: () => void
+  onDateClick: () => void
 }
 
 /**
@@ -28,7 +30,17 @@ export interface HeaderProps {
  */
 
 const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
-  const { email, renderInfo, expenseTotal, incomeTotal, onExpenseClick, onIncomeClick, onOpenDrawer } = props
+  const {
+    email,
+    month,
+    renderInfo,
+    expenseTotal,
+    incomeTotal,
+    onExpenseClick,
+    onIncomeClick,
+    onOpenDrawer,
+    onDateClick
+  } = props
 
   return (
     <Container>
@@ -38,11 +50,15 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
       <ContainerInfo>
         {renderInfo && (
           <>
-            <OpenInput expense onClick={onExpenseClick} data-testid="Header/ExpenseButton">
+            <OpenInput value="month" onClick={onDateClick} data-testid="Header/DateButton">
+              <Label>Mês: </Label>
+              <span>{month}</span>
+            </OpenInput>
+            <OpenInput value="expense" onClick={onExpenseClick} data-testid="Header/ExpenseButton">
               <Label>Total de despesas: </Label>
               <span>R${expenseTotal}</span>
             </OpenInput>
-            <OpenInput expense={false} onClick={onIncomeClick} data-testid="Header/IncomeButton">
+            <OpenInput value="income" onClick={onIncomeClick} data-testid="Header/IncomeButton">
               <Label>Total de ganhos: </Label>
               <span>R${incomeTotal}</span>
             </OpenInput>

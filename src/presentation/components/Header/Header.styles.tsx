@@ -25,7 +25,7 @@ export const Label = styled.p`
 `
 
 interface OpenInputProps {
-  expense: boolean
+  value: 'expense' | 'income' | 'month'
 }
 
 export const OpenInput = styled.button<OpenInputProps>`
@@ -36,8 +36,12 @@ export const OpenInput = styled.button<OpenInputProps>`
 
   span {
     ${({ theme }) => theme?.fonts?.bigInfo ?? {}}
-    color: ${({ theme, expense }) =>
-      expense ? theme?.colors?.error ?? '#ff6666' : theme?.colors?.tertiary ?? '#2cb67d'};
+    color: ${({ theme, value }) =>
+      value === 'expense'
+        ? theme?.colors?.error ?? '#ff6666'
+        : value === 'income'
+        ? theme?.colors?.tertiary ?? '#2cb67d'
+        : theme?.colors?.highlight ?? '#7f5af0'};
   }
 `
 
