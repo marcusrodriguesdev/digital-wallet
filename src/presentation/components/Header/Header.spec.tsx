@@ -95,7 +95,7 @@ describe('presentation/components/Header', () => {
     const { getByTestId } = render(sut)
     const button = getByTestId('Header/ExpenseButton')
 
-    expect(button.textContent).toContain(`Total de despesas: R$${expenseTotal}`)
+    expect(button.textContent).toContain(`total de despesas: R$${expenseTotal}`)
   })
 
   it('should display income total', () => {
@@ -104,7 +104,7 @@ describe('presentation/components/Header', () => {
     const { getByTestId } = render(sut)
     const button = getByTestId('Header/IncomeButton')
 
-    expect(button.textContent).toContain(`Total de ganhos: R$${incomeTotal}`)
+    expect(button.textContent).toContain(`total de ganhos: R$${incomeTotal}`)
   })
 
   it('should display initials', () => {

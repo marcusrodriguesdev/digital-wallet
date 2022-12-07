@@ -28,7 +28,7 @@ exports[`presentation/components/Header should match snapshot 1`] = `
             <p
               class="sc-hLBbgP kCFwqV"
             >
-              Mês: 
+              mês: 
             </p>
             <span>
               Janeiro
@@ -42,7 +42,7 @@ exports[`presentation/components/Header should match snapshot 1`] = `
             <p
               class="sc-hLBbgP kCFwqV"
             >
-              Total de despesas: 
+              total de despesas: 
             </p>
             <span>
               R$
@@ -57,7 +57,7 @@ exports[`presentation/components/Header should match snapshot 1`] = `
             <p
               class="sc-hLBbgP kCFwqV"
             >
-              Total de ganhos: 
+              total de ganhos: 
             </p>
             <span>
               R$
@@ -100,7 +100,7 @@ exports[`presentation/components/Header should match snapshot 1`] = `
           <p
             class="sc-hLBbgP kCFwqV"
           >
-            Mês: 
+            mês: 
           </p>
           <span>
             Janeiro
@@ -114,7 +114,7 @@ exports[`presentation/components/Header should match snapshot 1`] = `
           <p
             class="sc-hLBbgP kCFwqV"
           >
-            Total de despesas: 
+            total de despesas: 
           </p>
           <span>
             R$
@@ -129,7 +129,7 @@ exports[`presentation/components/Header should match snapshot 1`] = `
           <p
             class="sc-hLBbgP kCFwqV"
           >
-            Total de ganhos: 
+            total de ganhos: 
           </p>
           <span>
             R$
