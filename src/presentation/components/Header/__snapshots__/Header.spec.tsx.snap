@@ -21,8 +21,23 @@ exports[`presentation/components/Header should match snapshot 1`] = `
           class="sc-dkrFOg kJEZRB"
         >
           <button
+            class="sc-eDvSVe iUasUO"
+            data-testid="Header/DateButton"
+            value="month"
+          >
+            <p
+              class="sc-hLBbgP kCFwqV"
+            >
+              Mês: 
+            </p>
+            <span>
+              Janeiro
+            </span>
+          </button>
+          <button
             class="sc-eDvSVe eKDymJ"
             data-testid="Header/ExpenseButton"
+            value="expense"
           >
             <p
               class="sc-hLBbgP kCFwqV"
@@ -37,6 +52,7 @@ exports[`presentation/components/Header should match snapshot 1`] = `
           <button
             class="sc-eDvSVe yYooT"
             data-testid="Header/IncomeButton"
+            value="income"
           >
             <p
               class="sc-hLBbgP kCFwqV"
@@ -77,8 +93,23 @@ exports[`presentation/components/Header should match snapshot 1`] = `
         class="sc-dkrFOg kJEZRB"
       >
         <button
+          class="sc-eDvSVe iUasUO"
+          data-testid="Header/DateButton"
+          value="month"
+        >
+          <p
+            class="sc-hLBbgP kCFwqV"
+          >
+            Mês: 
+          </p>
+          <span>
+            Janeiro
+          </span>
+        </button>
+        <button
           class="sc-eDvSVe eKDymJ"
           data-testid="Header/ExpenseButton"
+          value="expense"
         >
           <p
             class="sc-hLBbgP kCFwqV"
@@ -93,6 +124,7 @@ exports[`presentation/components/Header should match snapshot 1`] = `
         <button
           class="sc-eDvSVe yYooT"
           data-testid="Header/IncomeButton"
+          value="income"
         >
           <p
             class="sc-hLBbgP kCFwqV"

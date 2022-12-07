@@ -10,13 +10,16 @@ const makeSut = (props?: Partial<HeaderProps>): any => {
   const expenseTotal = props?.expenseTotal ?? Faker.random.number()
   const incomeTotal = props?.incomeTotal ?? Faker.random.number()
   const email = props?.email ?? Faker.internet.email()
+  const month = props?.month ?? Faker.date.month()
   const renderInfo = props?.renderInfo ?? true
   const onExpenseClick = jest.fn()
   const onIncomeClick = jest.fn()
   const onOpenDrawer = jest.fn()
+  const onDateClick = jest.fn()
 
   const sut = (
     <Header
+      month={month}
       renderInfo={renderInfo}
       email={email}
       expenseTotal={expenseTotal}
@@ -24,6 +27,7 @@ const makeSut = (props?: Partial<HeaderProps>): any => {
       onExpenseClick={onExpenseClick}
       onIncomeClick={onIncomeClick}
       onOpenDrawer={onOpenDrawer}
+      onDateClick={onDateClick}
     />
   )
 
@@ -35,7 +39,8 @@ const makeSut = (props?: Partial<HeaderProps>): any => {
     incomeTotal,
     onExpenseClick,
     onIncomeClick,
-    onOpenDrawer
+    onOpenDrawer,
+    onDateClick
   }
 }
 
@@ -44,7 +49,8 @@ describe('presentation/components/Header', () => {
     const { sut } = makeSut({
       email: 'alguem@gmail.com',
       expenseTotal: 100,
-      incomeTotal: 200
+      incomeTotal: 200,
+      month: 'Janeiro'
     })
     const component = render(sut)
     expect(component).toMatchSnapshot()
@@ -110,5 +116,16 @@ describe('presentation/components/Header', () => {
     const button = getByTestId('Header/CircleName')
 
     expect(button.textContent).toContain('A')
+  })
+
+  it('should call onDateClick when date button is clicked', () => {
+    const { sut, onDateClick } = makeSut()
+
+    const { getByTestId } = render(sut)
+    const button = getByTestId('Header/DateButton')
+
+    fireEvent.click(button)
+
+    expect(onDateClick).toBeCalledTimes(1)
   })
 })
