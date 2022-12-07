@@ -51,15 +51,15 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
         {renderInfo && (
           <>
             <OpenInput value="month" onClick={onDateClick} data-testid="Header/DateButton">
-              <Label>Mês: </Label>
+              <Label>mês: </Label>
               <span>{month}</span>
             </OpenInput>
             <OpenInput value="expense" onClick={onExpenseClick} data-testid="Header/ExpenseButton">
-              <Label>Total de despesas: </Label>
+              <Label>total de despesas: </Label>
               <span>R${expenseTotal}</span>
             </OpenInput>
             <OpenInput value="income" onClick={onIncomeClick} data-testid="Header/IncomeButton">
-              <Label>Total de ganhos: </Label>
+              <Label>total de ganhos: </Label>
               <span>R${incomeTotal}</span>
             </OpenInput>
           </>
