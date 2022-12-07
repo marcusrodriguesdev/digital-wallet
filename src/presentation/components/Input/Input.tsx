@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 
 import { Assets } from '../../../presentation/theme/Assets'
-import { scaleTypes } from '../types/Input'
+import { scaleTypes } from '../../types/Input'
 import { Button, Container, HelpMessage, HelpMessageContainer, Label, StyledInput } from './Input.styles'
 
 export interface InputProps {

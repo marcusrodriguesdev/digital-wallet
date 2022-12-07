@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ButtonVariantTypes, ScaleTypes } from '../types/Button'
+import { ButtonVariantTypes, ScaleTypes } from '../../types/Button'
 import { Container, Text } from './Button.styles'
 
 export interface ButtonProps {

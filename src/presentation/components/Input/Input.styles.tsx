@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { scaleTypes } from '../types/Input'
+import { scaleTypes } from '../../types/Input'
 
 export const Container = styled.div`
   position: relative;
