@@ -25,6 +25,20 @@ export interface DrawerProps {
   onSelectDashboard: () => void
 }
 
+/**
+ * A Drawer for the application
+ *
+ * @param dashboardSelected   A boolean to check if the dashboard is selected
+ * @param settingSelected     A boolean to check if the settings is selected
+ * @param walletSelected      A boolean to check if the wallet is selected
+ * @param logoutSelected      A boolean to check if the logout is selected
+ * @param onCloseMenu         The function to be called when the close button is clicked
+ * @param onSelectWallet      The function to be called when the wallet button is clicked
+ * @param onSelectSetting     The function to be called when the settings button is clicked
+ * @param onLogoutSelected    The function to be called when the logout button is clicked
+ * @param onSelectDashboard   The function to be called when the dashboard button is clicked
+ */
+
 const Drawer: React.FC<DrawerProps> = (props: DrawerProps) => {
   const {
     dashboardSelected,

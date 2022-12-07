@@ -15,6 +15,18 @@ export interface HeaderProps {
   onOpenDrawer: () => void
 }
 
+/**
+ * A Header for the application
+ *
+ * @param renderInfo      The boolean to render the info
+ * @param email           The email of the user
+ * @param expenseTotal    The total of expenses
+ * @param incomeTotal     The total of incomes
+ * @param onExpenseClick  A function to be called when the expense button is clicked
+ * @param onIncomeClick   A function to be called when the income button is clicked
+ * @param onOpenDrawer    A function to be called when the menu button is clicked
+ */
+
 const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   const { email, renderInfo, expenseTotal, incomeTotal, onExpenseClick, onIncomeClick, onOpenDrawer } = props
 
