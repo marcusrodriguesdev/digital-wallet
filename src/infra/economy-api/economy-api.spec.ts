@@ -1,8 +1,8 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 
-import { getCurrency } from '../EconomyApi'
-import { data } from './mock'
+import { getCurrency } from './economy-api'
+import { data } from './test/mock'
 
 describe('EconomyApi', () => {
   it('should return the currency', async () => {
