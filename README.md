@@ -1,6 +1,6 @@
 # Digital Wallet
 <p align="center">
-   <img src="./public/assets/icons/logo-project.png" alt="Digital Wallet" width="300"/>
+   <img src="./src/assets/icons/logo-project.png" alt="Digital Wallet" width="300"/>
 </p>
 
 <p align="center">	
