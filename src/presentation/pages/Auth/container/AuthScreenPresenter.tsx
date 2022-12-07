@@ -16,7 +16,7 @@ const AuthScreenPresenter: React.FC = () => {
 
   const handleSubmit = (): void => {
     localStorage.setItem('email', emailValue)
-    navigate('/carteira')
+    navigate('/wallet')
   }
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const AuthScreenPresenter: React.FC = () => {
   useEffect(() => {
     const email = localStorage.getItem('email')
 
-    if (email) navigate('/carteira')
+    if (email) navigate('/wallet')
   }, [emailValue])
 
   useEffect(() => {
